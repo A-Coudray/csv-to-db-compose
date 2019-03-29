@@ -1,0 +1,12 @@
+version: "3"
+
+
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+    volumes:
+    volumes:
+      - "<path_to_local_pgdata>:/var/lib/postgresql/data/pgdata"
